@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_name"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_name"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        tools:ignore="LabelFor"/>
+
+    <Button
+        android:id="@+id/btn_show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_name"
+        android:text="@string/btn_show_name"
+        android:onClick="showName"/>
+
+    <TextView
+        android:id="@+id/text_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_below="@+id/btn_show_name"/>
+
+</RelativeLayout>
